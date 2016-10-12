@@ -1,0 +1,31 @@
+git命令行使用：
+
+文件的添加和提交：
+1 git init 初始化仓库
+2 git status 查看当前仓库的状态
+3 git add -A 添加未被追踪的文件
+4 git commit -m "提交信息"
+5 git log 提交的记录
+
+文件的修改：
+在修改文件之后，可查看git status；
+git diff 查看修改了的部分；
+git checkout -- 撤销更改；（不删除文件）
+
+版本回退：
+git reset --hard xxxxxxx(版本号前7位)；
+git log 查看记录；
+git reflog 显示HEAD的位置；
+git reset --hard xxxxxx(想要回到的版本号前7位)；
+git log 查看记录；
+
+清除未追踪的文件：
+git clean -xf (清除所有未被追踪的文件)；
+
+github与git关联：
+复制远程仓库的SSH地址；
+git remote add origin 复制的地址；
+git push -u origin master；
+
+
+
